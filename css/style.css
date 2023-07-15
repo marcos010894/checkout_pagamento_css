@@ -98,7 +98,7 @@ input{
     display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     .container_flex {
         display: flex;
         justify-content: space-between;
@@ -125,7 +125,7 @@ input{
     }
 
     .container_card {
-        width: 100%;
+        width: 330px;
         margin-top: 130px;
     }
 
