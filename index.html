@@ -28,30 +28,30 @@
                 <div id="container_for_mobile" class="container_for_mobile">
                     <div class="container_card">
                         <div id="text_number">
-                            <h3> 1233 32321 3123 321 </h3>
+                            <h3 id="number_card"> 1233 32321 3123 321 </h3>
                         </div>
 
                         <div class="texts_infos_card">
-                            <div class="text_data"><span id="mes">04</span>/<span id="ano">23</span></div>
+                            <div class="text_data"><span id="date_input_card">04/23</span></div>
                             <div class="text_csv">***</div>
                         </div>
 
                         <div id="text_name">
-                            <h3> Marcos Paulo Machado Azevedo </h3>
+                            <h6 id="name_card"> Marcos Paulo Machado Azevedo </h6>
                         </div>
                     </div>
 
                     <form>
-                        <input type="text" name="nome" class="form-input" placeholder="Nome" required>
-                        <input type="text" name="numeroCartao" class="form-input" placeholder="Número do Cartão"
-                            required>
+                        <input type="text" id="input_name" name="nome" class="form-input" placeholder="Nome" required>
+                        <input type="text" id="number_card_input" name="numeroCartao" class="form-input"
+                            placeholder="Número do Cartão" required>
                         <div style="display: flex; justify-content: space-between;">
-                            <input type="text" name="mesAno" class="form-input" style="width: 70%;"
+                            <input type="text" id="date_input" name="mesAno" class="form-input" style="width: 70%;"
                                 placeholder="Mês / Ano" required>
-                            <input type="text" name="csv" class="form-input" style="width: 25%;" placeholder="CSV"
-                                required>
+                            <input type="text" id="csv_input" name="csv" class="form-input" style="width: 25%;"
+                                placeholder="CSV" required>
                         </div>
-                        <input type="text" name="cpf" class="form-input" placeholder="CPF" required>
+                        <input id="cpf_input" type="text" name="cpf" class="form-input" placeholder="CPF" required>
                         <button class="button-fixed">Finalizar</button>
                     </form>
                 </div>
@@ -63,6 +63,17 @@
 
     </div>
     <script src="js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#number_card_input').mask('0000 0000 0000 0000 0000');
+            $('#date_input').mask('00/00');
+            $('#date_input').mask('0000');
+            $('#cpf_input').mask('000.000.000-00');
+        });
+    </script>
 </body>
 
 

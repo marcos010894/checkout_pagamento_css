@@ -185,3 +185,7 @@ input{
     }
 
 }
+
+#text_name{
+    text-transform: uppercase;
+}
