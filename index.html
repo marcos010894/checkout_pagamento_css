@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checout_pagamento</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="main_card">
+        <div class="main_chckout">
+            <div class="container_flex">
+                <div class="container_img" style="  background-image: url('https://s1.static.brasilescola.uol.com.br/be/conteudo/images/imagem-em-lente-convexa.jpg');
+                background-size: cover;
+                background-position: center;">
+                    <div class="infos_payament">
+                        <h3>Nome da estadia</h3>
+                        <h3>Data Entrada: 04/10/2023</h3>
+                        <h3>Data Saida: 04/10/2023</h3>
+                        <h1 style="color: green">Valor: R$ 404,00</h1>
+                    </div>
+                    <div id="btn_proximo" class="btn_proximo"> <button id="proximo">Proximo</button></div>
+
+                </div>
+
+                <div id="container_for_mobile" class="container_for_mobile">
+                    <div class="container_card">
+                        <div id="text_number">
+                            <h3> 1233 32321 3123 321 </h3>
+                        </div>
+
+                        <div class="texts_infos_card">
+                            <div class="text_data"><span id="mes">04</span>/<span id="ano">23</span></div>
+                            <div class="text_csv">***</div>
+                        </div>
+
+                        <div id="text_name">
+                            <h3> Marcos Paulo Machado Azevedo </h3>
+                        </div>
+                    </div>
+
+                    <form>
+                        <input type="text" name="nome" class="form-input" placeholder="Nome" required>
+                        <input type="text" name="numeroCartao" class="form-input" placeholder="Número do Cartão"
+                            required>
+                        <div style="display: flex; justify-content: space-between;">
+                            <input type="text" name="mesAno" class="form-input" style="width: 70%;"
+                                placeholder="Mês / Ano" required>
+                            <input type="text" name="csv" class="form-input" style="width: 25%;" placeholder="CSV"
+                                required>
+                        </div>
+                        <input type="text" name="cpf" class="form-input" placeholder="CPF" required>
+                        <button class="button-fixed">Finalizar</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+
+</html>
